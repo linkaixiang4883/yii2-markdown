@@ -375,10 +375,10 @@ EOT;
         $encodeLabel = ArrayHelper::remove($options, 'encodeLabel', $this->encodeLabels);
         $options['type'] = 'button';
         $prefix = $this->getDefaultIconPrefix();
-        if (strlen(trim($icon)) > 0) {
+        if (!empty($icon) && strlen(trim($icon)) > 0) {
             $icon = "<i class='{$prefix}{$icon}'></i>";
         }
-        if (strlen(trim($label)) > 0) {
+        if (!empty($label) && strlen(trim($label)) > 0) {
             $icon .= ' ';
         }
         $label = $icon . ($encodeLabel ? Html::encode($label) : $label);
