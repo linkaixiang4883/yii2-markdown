@@ -14,8 +14,8 @@ use yii\helpers\HtmlPurifier;
 use yii\helpers\Json;
 use yii\web\Response;
 use kartik\base\Config;
-use kartik\markdown\Module;
-use kartik\markdown\Markdown;
+use linkaixiang4883\markdown\Module;
+use linkaixiang4883\markdown\Markdown;
 
 class ParseController extends \yii\web\Controller
 {
