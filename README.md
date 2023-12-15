@@ -5,10 +5,6 @@
     <br>
     yii2-markdown
     <hr>
-    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DTP3NZQ6G2AYU"
-       title="Donate via Paypal" target="_blank">
-        <img src="http://kartik-v.github.io/bootstrap-fileinput-samples/samples/donate.png" alt="Donate"/>
-    </a>
 </h1>
 
 [![Stable Version](https://poser.pugx.org/kartik-v/yii2-markdown/v/stable)](https://packagist.org/packages/kartik-v/yii2-markdown)
@@ -17,6 +13,8 @@
 [![Total Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/downloads)](https://packagist.org/packages/kartik-v/yii2-markdown)
 [![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/d/monthly)](https://packagist.org/packages/kartik-v/yii2-markdown)
 [![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/d/daily)](https://packagist.org/packages/kartik-v/yii2-markdown)
+
+Original module by [kartik-v](https://github.com/kartik-v/yii2-markdown)
 
 This module provides Markdown Editing and Conversion utilities for Yii Framework 2.0. It implements markdown conversion using PHP Markdown Extra and PHP Smarty Pants. In addition, you can customize the flavor of Markdown, by including additional custom conversion patterns. The module also includes an enhanced customized Markdown Editor Widget for markdown editing and preview at runtime. This widget is styled using Bootstrap 3.0. View a [complete demo](http://demos.krajee.com/markdown-demo).
 
@@ -53,13 +51,13 @@ Read this [web tip /wiki](http://webtips.krajee.com/setting-composer-minimum-sta
 Either run
 
 ```
-$ php composer.phar require kartik-v/yii2-markdown "dev-master"
+$ php composer.phar require linkaixiang4883/yii2-markdown "dev-master"
 ```
 
 or add
 
 ```
-"kartik-v/yii2-markdown": "dev-master"
+"linkaixiang4883/yii2-markdown": "dev-master"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -72,7 +70,7 @@ Add `markdown` to your modules section of your Yii configuration file
 'modules' => [
 	/* other modules */
 	'markdown' => [
-		'class' => 'kartik\markdown\Module',
+		'class' => 'linkaixiang4883\markdown\Module',
 	]
 ];
 ```
@@ -81,7 +79,7 @@ You can setup additional configuration options for the `markdown` module:
 'modules' => [
 	'markdown' => [
 		// the module class
-		'class' => 'kartik\markdown\Module',
+		'class' => 'linkaixiang4883\markdown\Module',
 		
 		// the controller action route used for markdown editor preview
 		'previewAction' => '/markdown/parse/preview',
@@ -100,7 +98,7 @@ You can setup additional configuration options for the `markdown` module:
 
 ### Markdown
 ```php
-use kartik\markdown\Markdown;
+use linkaixiang4883\markdown\Markdown;
 
 // default call
 echo Markdown::convert($content);
@@ -116,7 +114,7 @@ echo Markdown::convert($content, ['custom' => [
 ### MarkdownEditor
 ```php
 // add this in your view
-use kartik\markdown\MarkdownEditor;
+use linkaixiang4883\markdown\MarkdownEditor;
 
 // usage with model
 echo MarkdownEditor::widget([
@@ -136,7 +134,7 @@ Smarty templates can be enabled globally by setting the module params
 ```php
 'modules' => [
 	'markdown' => [
-	     'class' => 'kartik\markdown\Module',
+	     'class' => 'linkaixiang4883\markdown\Module',
 	     'smarty' => true,
 	     // Smarty class configuration
 	     'smartyParams' => [],
@@ -160,7 +158,7 @@ Note that it may be unwise to enable Smarty templates globally. You can set the 
 ```php
 'modules' => [
 	'markdown' => [
-		'class' => 'kartik\markdown\Module',
+		'class' => 'linkaixiang4883\markdown\Module',
 		'smarty' => function($module) {
 			if (\Yii::$app->user->can('smarty')) {
 			    if(\Yii::$app->user->can('smartyYiiApp'))

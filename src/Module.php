@@ -7,7 +7,7 @@
  * @version   1.3.1
  */
 
-namespace kartik\markdown;
+namespace linkaixiang4883\markdown;
 
 use Yii;
 

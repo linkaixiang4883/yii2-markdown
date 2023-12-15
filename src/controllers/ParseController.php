@@ -7,7 +7,7 @@
  * @version   1.3.1
  */
 
-namespace kartik\markdown\controllers;
+namespace linkaixiang4883\markdown\controllers;
 
 use Yii;
 use yii\helpers\HtmlPurifier;
