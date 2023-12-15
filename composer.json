@@ -1,8 +1,8 @@
 {
-    "name": "kartik-v/yii2-markdown",
+    "name": "linkaixiang4883/yii2-markdown",
     "description": "Advanced Markdown editing and conversion utilities for Yii Framework 2.0",
     "keywords": ["yii", "yii2", "extension", "markdown", "editor", "converter", "input", "form", "bootstrap", "jquery"],
-    "homepage": "https://github.com/kartik-v/yii2-markdown",
+    "homepage": "https://github.com/linkaixiang4883/yii2-markdown",
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "authors": [
@@ -10,6 +10,10 @@
             "name": "Kartik Visweswaran",
             "email": "kartikv2@gmail.com",
             "homepage": "http://www.krajee.com/"
+        },
+        {
+            "name": "linkaixiang4883",
+            "email": "linkaixiang4883@gmail.com"
         }
     ],
     "require": {
